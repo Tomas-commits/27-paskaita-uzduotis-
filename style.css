@@ -1,0 +1,93 @@
+* {
+  box-sizing: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.content {
+  width: 60%;
+  position: absolute;
+}
+
+.red {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.container2 {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.content2 {
+  width: 60%;
+  position: relative;
+  align-content: center;
+}
+
+.bluebox {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+}
+
+.hide {
+  display: none;
+}
+
+.container3 {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.content3 {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blackbox {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+}
+
+.container4 {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.content4 {
+  width: 60%;
+}
+
+table th,
+table td {
+  border: solid 1px grey;
+}
+table {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table tr,
+th {
+  background-color: rgb(179, 176, 176);
+}
+
+table tr:hover {
+  background-color: rgb(192, 192, 192);
+}
