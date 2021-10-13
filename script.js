@@ -39,10 +39,9 @@ function randomcolor() {
     document.getElementById("box4").style.backgroundColor = "#" + random4;
     document.getElementById("box5").style.backgroundColor = "#" + random5;
 }
-
-
+var no = 0;
 document.getElementById("btn2").addEventListener("click", function(e) {
-    e.preventDefault();
+  e.preventDefault();
   var row = document.getElementById("tablecontent").insertRow(1);
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
@@ -51,12 +50,13 @@ document.getElementById("btn2").addEventListener("click", function(e) {
   let name = document.getElementById("name").value;
   let surname = document.getElementById("surname").value;
   let birthYear = document.getElementById("birthYear").value;
-  for (let i=0; i++ ) { 
-    
-  cell1.innerHTML = i;
-  }
+  no++;
+  cell1.innerHTML = no;
   cell2.innerHTML = name;
-  cell3.innerHTML = surname;
-    
-  cell4.innerHTML = "NEW CELL4";
+  cell3.innerHTML = surname;  
+  let registerDate = new Date;
+  let normalDate = registerDate.getFullYear();
+  console.log(normalDate);
+  var age = normalDate - birthYear;
+  cell4.innerHTML = age;  
 });
