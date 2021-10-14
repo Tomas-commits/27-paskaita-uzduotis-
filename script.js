@@ -60,3 +60,13 @@ document.getElementById("btn2").addEventListener("click", function(e) {
   var age = normalDate - birthYear;
   cell4.innerHTML = age;  
 });
+
+document.getElementById("burgerid").addEventListener("click", function() {
+    document.getElementById("menuid").classList.add("menuShow");
+    document.getElementById("burgerid").classList.add("burgerNone");
+})
+
+document.getElementById("menuid").addEventListener("click", function() {
+    document.getElementById("menuid").classList.remove("menuShow");
+    document.getElementById("burgerid").classList.remove("burgerNone");
+})
